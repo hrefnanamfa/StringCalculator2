@@ -1,0 +1,22 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "tdd assignment creating a stringcalculator program",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrefnanamfa/hugb_tdd.git"
+  },
+  "author": "hrefna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrefnanamfa/hugb_tdd/issues"
+  },
+  "homepage": "https://github.com/hrefnanamfa/hugb_tdd#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
