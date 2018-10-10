@@ -1,6 +1,6 @@
 //calculator.js
-function greeting(){
-	console.log("This is calculator.js");
+function calculator(name){
+	return "Hello, " + name + "! This is the calculator";
 }
 
-greeting();
+module.exports = calculator;
