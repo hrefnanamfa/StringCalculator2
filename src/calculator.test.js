@@ -35,3 +35,6 @@ it("should return exception 'Negatives not allowed:' and list all negative numbe
 	expect(throwError).toThrowError("Negatives not allowed: -4,-5");
 });
 
+it("should ignore numbers bigger than 1000", () => {
+	expect(add("1001,2")).toBe(2);
+});
