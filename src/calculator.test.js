@@ -38,3 +38,7 @@ it("should return exception 'Negatives not allowed:' and list all negative numbe
 it("should ignore numbers bigger than 1000", () => {
 	expect(add("1001,2")).toBe(2);
 });
+
+it("should split numbers with given delimiter", () => {
+	expect(add("//;\n1;2")).toBe(3);
+});

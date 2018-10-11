@@ -2,8 +2,24 @@
 function add(numbers){
 	if(numbers == "") // if the string is empty
 		return 0;
-	
-	if(numbers.includes(",") || numbers.includes("\n")){
+
+	if(numbers[0] == "/" && numbers[1] == "/" ){
+		var i = 2;
+		var splitter = "";
+		while(numbers[i] != "\n"){
+			splitter = splitter + numbers[i];
+			i++;
+		}
+
+		var substr = numbers.substr(numbers.indexOf("\n") + 1);
+		var numberArray = substr.split(splitter);
+
+		if(numbers.includes("-")) // if we have negative numbers
+			checkNegativeNumbers(numberArray);
+		
+		return sum(numberArray);
+	}
+	else if(numbers.includes(",") || numbers.includes("\n")){
 		var numberArray = numbers.split(/[\n,]+/); // split on , and \n
 
 		if(numbers.includes("-")) // if we have negative numbers
