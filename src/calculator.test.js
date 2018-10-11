@@ -20,3 +20,17 @@ it("should sumerize multiple numbers", () => {
 it("should sumerize multiple numbers on , and new lines", () => {
 	expect(add("1\n2,3")).toBe(6);
 });
+
+it("should return exception 'Negatives not allowed' and list all negative numbers in the list", () => {
+	function throwError() {
+		add("1,-2,3");
+	}
+	expect(throwError).toThrowError("Negatives not allowed: -2");
+});
+
+it("should return exception 'Negatives not allowed' and list all negative numbers in the list", () => {
+	function throwError() {
+		add("2,-4,3,-5");
+	}
+	expect(throwError).toThrowError("Negatives not allowed: -4,-5");
+});
