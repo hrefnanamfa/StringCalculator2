@@ -1,6 +1,6 @@
 //calculator.js
-function calculator(name){
-	return "Hello, " + name + "! This is the calculator";
+function add(number){
+	return 0;
 }
 
-module.exports = calculator;
+module.exports = add;

@@ -1,5 +1,5 @@
 //app.js
 
-const calculator = require('./src/calculator');
+const calculator = require("./src/calculator");
 
-console.log(calculator('Hrefna'));
+console.log(calculator());

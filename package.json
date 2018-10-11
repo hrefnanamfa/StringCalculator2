@@ -4,7 +4,10 @@
   "description": "tdd assignment creating a stringcalculator program",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "clean": "rm -rf node_modules",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

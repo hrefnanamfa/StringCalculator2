@@ -1,6 +1,6 @@
 //calculator.test.js
-const calculator = require('./calculator');
+const add = require("./calculator");
 
-test("Returns greeting with name and states it's the calculator", () =>{
-	expect(calculator("Namfa")).toBe("Hello, Namfa! This is the calculator");
+it("should return zero on an empty string", () => {
+	expect(add("")).toBe(0);
 });
