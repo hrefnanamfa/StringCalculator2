@@ -71,5 +71,5 @@ it("should split numbers with given delimiter", () => {
 });
 
 it("should split numbers with given delimiter", () => {
-	expect(add("//!\n1!2!3!4")).toBe(10);
+	expect(add("//!\n1!2,3\n4")).toBe(10);
 });

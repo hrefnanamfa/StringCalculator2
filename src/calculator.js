@@ -11,10 +11,11 @@ function add(numbers){
 	else if(numbers[0] == "/" && numbers[1] == "/" ){ //if we get a different delimiter
 		var splitter = getSplitter(numbers); // get the delimitor
 		var substr = numbers.substr(numbers.indexOf("\n") + 1); // get numbers in string
-		numberArray = substr.split(splitter); // make array on delimiter
+		var regex = new RegExp(splitter, "g"); // regular expression object to match text with a pattern ("g" to find all matches)
+		numbers = substr.replace(regex, ","); // replace splitter with , 
 	}
 
-	else if(numbers.includes(",") || numbers.includes("\n")) // if delimiter is , or \n
+	if(numbers.includes(",") || numbers.includes("\n")) // if delimiter is , or \n
 		numberArray = numbers.split(/[\n,]+/); // make array on , and \n
 	
 	if(numbers.includes("-")) // if we have negative numbers
